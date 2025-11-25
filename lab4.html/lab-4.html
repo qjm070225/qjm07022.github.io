@@ -7,15 +7,26 @@
     <link rel="stylesheet" href="lab.4.css">
     <link rel="stylesheet" href="iconfont.css">
     <link rel="stylesheet" href="5.css">
+    <link rel="stylesheet" href="6.css">
 </head>
 <body>
     <header class="fixed-header">
         <div class="logo">秋分图书展销</div>
  <nav class="navbar">
     <div class="container">
-      <!-- 登录/注册链接 -->
-      <a href="" class="login-link" id="showLogin">登录/注册</a >
     </div>
+     <header class="header">
+        <div class="nav container">
+            <a href="" class="login-link" id="showLogin">登录/注册</a
+            class="nav-actions">
+                <a href=" " class="icon search-icon">
+                    <img src="20.jpg" alt="搜索">
+                </a >
+                <a href="#" class="icon cart-icon">
+                    <img src="21.jpg" alt="购物车">
+                </a >
+            </div>
+        </div>
   </nav>
         <nav class="main-nav">
             <ul>
@@ -146,12 +157,10 @@
                 </div>
        <div class="modal" id="loginModal">
     <div class="modal-content">
-      <!-- 弹窗头部 -->
       <div class="modal-header">
         <h3>用户登录</h3>
         <button class="close-btn" id="closeLogin">&times;</button>
       </div>
-      <!-- 弹窗表单 -->
       <div class="modal-body">
         <form>
           <div class="form-group">
@@ -174,27 +183,19 @@
       </div>
     </div>
   </div>
-
-
-  <!-- 遮罩层（弹窗显示时出现） -->
   <div class="overlay" id="overlay"></div>
 
 
   <script>
-    // 获取元素
     const showLogin = document.getElementById('showLogin');
     const loginModal = document.getElementById('loginModal');
     const closeLogin = document.getElementById('closeLogin');
     const overlay = document.getElementById('overlay');
-
-    // 显示登录弹窗
     showLogin.addEventListener('click', (e) => {
       e.preventDefault();
       loginModal.style.display = 'block';
       overlay.style.display = 'block';
     });
-
-    // 关闭登录弹窗
     closeLogin.addEventListener('click', () => {
       loginModal.style.display = 'none';
       overlay.style.display = 'none';
@@ -204,6 +205,15 @@
       overlay.style.display = 'none';
     });
   </script>
+  <section class="carousel container">
+        <div class="carousel-wrapper">
+            <img src="17.jpg" alt="轮播图1" class="carousel-item">
+            <img src="18.jpg" alt="轮播图2" class="carousel-item">
+            <img src="19.jpg" alt="轮播图3" class="carousel-item">
+        </div>
+    </section>
+    </div>
+
 </body>
 </html>      
             </div>
